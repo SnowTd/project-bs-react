@@ -191,8 +191,8 @@ function App() {
           <Routes>
               <Route path='/' element={<><Hcontent/><Content/><Collection/><AboutUs/></>}/> 
               <Route path='/product' element={<><ProductShop Card={CardProduct}/></>}/>
-              <Route path='/product/custom' element={<> <Product Card={Card} allProduct={allProduct} image={img} setimg={setImg}/> </>}/>
-              <Route path='/product/confirm' element={<><Cart cart={cartProductAll}  total={totalPrice}/></>}/>
+              <Route path='/custom' element={<> <Product Card={Card} allProduct={allProduct} image={img} setimg={setImg}/> </>}/>
+              <Route path='/confirm' element={<><Cart cart={cartProductAll}  total={totalPrice}/></>}/>
               <Route path='/joint' element={<><Joint Card={Jointshop} genaral={genaralJoint} festival={festivalJoint} country={countryJoint}/></>}/>
               <Route path='/community' element={<> <Community/> </>}/>
               <Route path='/contact' element={<><Contact/>  </>}/>

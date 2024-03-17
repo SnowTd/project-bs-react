@@ -41,7 +41,7 @@ export default function Product ({Card , image , allProduct,setimg}) {
                             )
                         })}
                         <p className="text-3xl mt-4"> ราคา  : <span>{tt}</span> </p>
-                        <Link to="/product/confirm"><button className="ml-2 mt-6 p-4 px-24 bg-rose-300 text-center rounded-xl text-white hover:bg-rose-200 transition duration-500">ยืนยันรายการ</button></Link>
+                        <Link to="/confirm"><button className="ml-2 mt-6 p-4 px-24 bg-rose-300 text-center rounded-xl text-white hover:bg-rose-200 transition duration-500">ยืนยันรายการ</button></Link>
                 </div>
                 
             </div>
