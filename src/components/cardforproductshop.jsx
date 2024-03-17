@@ -3,7 +3,7 @@ export default function CardProduct ({img , name , price , choose , path}) {
         <>
             <div class="w-full bg-whitw border w-72 border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                    <img class="w-auto md:p-8 p-2 rounded-t-lg" src="https://media.discordapp.net/attachments/1152548462727020626/1217569497293258902/Asset_3logoall.png?ex=660480f5&is=65f20bf5&hm=e6663d287521eb7f820062799a2843897bfcff9db7c7415ed91ef96fe386f556&=&format=webp&quality=lossless" alt="product image" />
+                    <img class="w-auto md:p-8 p-2 rounded-t-lg" src={img} alt="product image" />
                 </a>
                 <div class="md:px-5 md:pb-5">
                     <a href="#">
