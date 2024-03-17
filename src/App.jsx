@@ -19,44 +19,59 @@ import AboutUs from './components/aboutus'
 import Contact from './components/contact'
 import ProductShop from './components/productshop'
 import CardProduct from './components/cardforproductshop'
+import Community from './components/Community'
 
 function App() {
 
 
   
   const colorProduct = [
-    {id:0,header:'CUSTOM COLOR',title: 'Product1',content: 'Content',price:19.99,detail: 'detail',img:'https://media.discordapp.net/attachments/1152548462727020626/1218569034321367060/S__2277433_0.png?ex=660823d9&is=65f5aed9&hm=fedcb3858fcbb09ca635e35b6e51cfde05d64dd3e3dd718ae62219c58951677d&=&format=webp&quality=lossless&width=359&height=508',},
-    {id:1,header:'CUSTOM COLOR',title: 'Product2',content: 'Content',price:10.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
-    {id:2,header:'CUSTOM COLOR',title: 'Product3',content: 'Content',price:12.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
+    {id:0,header:'CUSTOM SIZE',title: '31mm.',content: 'Content',price:"9900",detail: 'detail',img:'https://img5.pic.in.th/file/secure-sv1/42325ce2c757500366.jpeg',},
+    {id:1,header:'CUSTOM SIZE',title: '36mm.',content: 'Content',price:"11900",detail: 'detail ',img:'https://img2.pic.in.th/pic/447607682126d5857c.jpeg'},
   ]
   const clockFaceProduct = [
-    {id:0,header:'CUSTOM CLOCKFACE',title: 'Product',content: 'Content',price:19.99,detail: 'detail',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg',},
-    {id:1,header:'CUSTOM CLOCKFACE',title: 'Product',content: 'Content',price:10.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
-    {id:2,header:'CUSTOM CLOCKFACE',title: 'Product',content: 'Content',price:12.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
+    {id:0,header:'CUSTOM CLOCKFACE',title: 'Deep Ocean',content: 'Content',price:"2500",detail: 'detail',img:'https://img2.pic.in.th/pic/b41e7a2d3d74e62ba7be13e109433395.png',},
+    {id:1,header:'CUSTOM CLOCKFACE',title: 'Milky Way',content: 'Content',price:"1900",detail: 'detail ',img:'https://img5.pic.in.th/file/secure-sv1/-2253fb771b9410cf5.png'},
+    {id:2,header:'CUSTOM CLOCKFACE',title: 'Gold Glamorous',content: 'Content',price:"2500",detail: 'detail ',img:'https://img2.pic.in.th/pic/00ab1b3348e77aaea2b5373ccd09ce56.png'},
+    {id:2,header:'CUSTOM CLOCKFACE',title: 'Rainbow Splash',content: 'Content',price:"2900",detail: 'detail ',img:'https://img2.pic.in.th/pic/818491776a80d69258d8940aad4f3007.png'},
   ]
   const materialProduct = [
-    {id:0,header:'CUSTOM MATERIAL',title: 'Product',content: 'Content',price:19.99,detail: 'detail',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg',},
-    {id:1,header:'CUSTOM MATERIAL',title: 'Product',content: 'Content',price:10.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
-    {id:2,header:'CUSTOM MATERIAL',title: 'Product',content: 'Content',price:12.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
+    {id:0,header:'CUSTOM MATERIAL',title: 'Titanium',content: 'Content',price:"9800",detail: 'detail',img:'https://img2.pic.in.th/pic/818491776a80d69258d8940aad4f3007.png',},
+    {id:1,header:'CUSTOM MATERIAL',title: 'Pink Gold',content: 'Content',price:"14900",detail: 'detail ',img:'https://img2.pic.in.th/pic/301f28d2b0b919bd1d57899f73897fc9.png'},
+    {id:2,header:'CUSTOM MATERIAL',title: 'Yellow Gold',content: 'Content',price:"17900",detail: 'detail ',img:'https://img5.pic.in.th/file/secure-sv1/f8133bd9be1941cc476da9221f221dba.jpeg'},
   ]
   const clockHandProduct = [
-    {id:0,header:'CUSTOM CLOCKHAND',title: 'Product',content: 'Content',price:19.99,detail: 'detail',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg',},
-    {id:1,header:'CUSTOM CLOCKHAND',title: 'Product',content: 'Content',price:10.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
-    {id:2,header:'CUSTOM CLOCKHAND',title: 'Product',content: 'Content',price:12.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock,-photo-number-1.jpg'},
+    {id:0,header:'CUSTOM CLOCKHAND',title: 'White Dragonfly',price: '1000',content:"",img: 'https://img5.pic.in.th/file/secure-sv1/1e744f3719435f86d84b662c5364d340.jpeg',detail:'detail',},
+    {id:0,header:'CUSTOM CLOCKHAND',title: 'Vintage Era',price: '850',content:"",img: 'https://img2.pic.in.th/pic/8528351fc7717459a289e0a4a668341d.jpeg',detail:'detail',},
+    {id:0,header:'CUSTOM CLOCKHAND',title: 'Golden Arrow',price: '890',content:"",img: 'https://img5.pic.in.th/file/secure-sv1/55198814365b1b4f0668b04701fa7bcf.jpeg',detail:'detail',},
+    {id:0,header:'CUSTOM CLOCKHAND',title: 'Old Beetles',price: '790',content:"",img: 'https://img2.pic.in.th/pic/6a426b98eae2da8d88cd42857350cf25.jpeg',detail:'detail',},
+    {id:0,header:'CUSTOM CLOCKHAND',title: 'Butterfly Rocket',price: '850',content:"",img: 'https://img5.pic.in.th/file/secure-sv1/959a306e448d0a5f565c83c65d41713b.jpeg',detail:'detail',},
+    {id:0,header:'CUSTOM CLOCKHAND',title: 'Blue Shark',price: '890',content:"",img: 'https://img2.pic.in.th/pic/0f4b1abac5b3769cc6daabbacc229694.jpeg',detail:'detail',},
+    {id:0,header:'CUSTOM CLOCKHAND',title: 'Common Luxury',price: '690',content:"",img: 'https://img2.pic.in.th/pic/0f4b1abac5b3769cc6daabbacc229694.jpeg',detail:'detail',},
+    {id:0,header:'CUSTOM CLOCKHAND',title: 'Morning Pumpkin ',price: '750',content:"",img: 'https://img5.pic.in.th/file/secure-sv1/883b1f6140438b5d5e8ba6fb7b7ba54d.jpeg',detail:'detail',},
   ]
   const NumberProduct = [
-    {id:0,header:'CUSTOM NUMBER',title: 'Product',content: 'Content',price:19.99,detail: 'detail',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg',},
-    {id:1,header:'CUSTOM NUMBER',title: 'Product',content: 'Content',price:10.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
-    {id:2,header:'CUSTOM NUMBER',title: 'Product',content: 'Content',price:12.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
+    {id:0,header:'CUSTOM NUMBER',title: 'Sticks',content: 'Content',price:"690",detail: 'detail',img:'https://media.discordapp.net/attachments/1218959274017816579/1218962350217101392/600169a6cb258857.png?ex=66099227&is=65f71d27&hm=79f735c3bf360fbb2415dce11e7083bcd92af75b160058dd0fcbd83b7a9f5594&=&format=webp&quality=lossless&width=468&height=662',},
+    {id:1,header:'CUSTOM NUMBER',title: 'Roman number',content: 'Content',price:"890",detail: 'detail ',img:'https://media.discordapp.net/attachments/1218959274017816579/1218962351131197610/9e3d8b5a8a1eab0b.png?ex=66099227&is=65f71d27&hm=a1d8476606f8a16cd79549dd7822ced96f9859da5892c0f32477fd0ccb31ccb0&=&format=webp&quality=lossless&width=468&height=662'},
+    {id:2,header:'CUSTOM NUMBER',title: 'Arabic number',content: 'Content',price:"790",detail: 'detail ',img:'https://media.discordapp.net/attachments/1218959274017816579/1218962350565101588/b0a856cdd8d310d7.png?ex=66099227&is=65f71d27&hm=3efa5c0d733ef837d925ba4f1fef795a54cf31c64a3d8deb339f5442b330b6e1&=&format=webp&quality=lossless&width=468&height=662'},
+  ]
+  const DiamondProduct = [
+    {id:0,header:'CUSTOM DIAMOND',title: 'Yellow Daimond',content: 'Content',price:"175000",detail: 'detail',img:'https://img2.pic.in.th/pic/14a4d2fb746dc564f.png',},
+    {id:1,header:'CUSTOM DIAMOND',title: 'White Daimond',content: 'Content',price:"115000",detail: 'detail ',img:'https://img5.pic.in.th/file/secure-sv1/2202e295679c901f2.png'},
+    {id:2,header:'CUSTOM DIAMOND',title: 'Pink Daimond',content: 'Content',price:"135000",detail: 'detail ',img:'https://img2.pic.in.th/pic/350dc005f33e632ac.png'},
+    {id:2,header:'CUSTOM DIAMOND',title: 'Don\'t need Diamond',content: 'Content',price:" ",detail: 'detail ',img:''},
   ]
 
-  const allProduct = [{name:colorProduct,header:colorProduct[0].header},{name:clockFaceProduct,header:clockFaceProduct[0].header},{name:materialProduct,header:materialProduct[0].header},{name:clockHandProduct,header:clockHandProduct[0].header},{name:NumberProduct,header:NumberProduct[0].header}]
+  const allProduct = [{name:materialProduct,header:materialProduct[0].header},{name:colorProduct,header:colorProduct[0].header},{name:clockFaceProduct,header:clockFaceProduct[0].header},{name:clockHandProduct,header:clockHandProduct[0].header},{name:NumberProduct,header:NumberProduct[0].header},{name:DiamondProduct,header:DiamondProduct[0].header}]
   const [totalPrice,setTotalPrice] = useState(0) 
   const [priceColor,setPriceColor] = useState(0)
   const [priceFace,setPriceFace] = useState(0)
   const [priceMaterial,setPriceMaterial] = useState(0)
   const [priceHand,setPriceHand] = useState(0)
   const [priceNumber,setPriceNumber] = useState(0)
+  const [productDiamond,setProductDiamond] = useState("")
+  const [priceDiamond,setPriceDiamond] = useState(0)
+  const [pricetDiamond,setPricetDiamond] = useState("")
   const [checkedandValue, setCheckedValue] = useState(0)
   const [imgId, setImgId] = useState(0)
   const [img,setImg] = useState("")
@@ -64,6 +79,7 @@ function App() {
   const [productFace,setProductFace] = useState("")
   const [productMaterial,setProductMaterial] = useState("")
   const [productHand,setProductHand] = useState("")
+
   const [productNumber,setProductNumber] = useState("")
   const [pricetColor,setPricetColor] = useState(0)
   const [pricetFace,setPricetFace] = useState(0)
@@ -140,15 +156,19 @@ function App() {
       setPricetNumber(e.target.value)
       setPriceNumber(e.target.value)
       
+    } else if (e.target.name === DiamondProduct[0].header) {
+      setProductDiamond(e.target.title)
+      setPricetDiamond(e.target.value)
+      setPriceDiamond(e.target.value)
     }
 
 }
   useEffect(()=> {
-    const sum = +priceColor + +priceFace + +priceMaterial+ +priceHand + +priceNumber
+    const sum = +priceColor + +priceFace + +priceMaterial+ +priceHand + +priceNumber + +priceDiamond
     const img_Id = colorProduct.indexOf((e) => e.id === imgId)
     const setimage = colorProduct[imgId].img
-    const cartConfirm =[productColor,productFace,productHand,productMaterial,productNumber]
-    const cartConfirmP =[pricetColor,pricetFace,pricetHand,pricetMaterial,pricetNumber]
+    const cartConfirm =[productColor,productFace,productHand,productMaterial,productNumber,productDiamond]
+    const cartConfirmP =[pricetColor,pricetFace,pricetHand,pricetMaterial,pricetNumber,pricetDiamond]
     setCartProductP(cartConfirmP)
     setCartProduct(cartConfirm)
     const objectProduct = [
@@ -157,10 +177,11 @@ function App() {
       {name:productHand,price:pricetHand},
       {name:productMaterial,price:pricetMaterial},
       {name:productNumber,price:pricetNumber},
+      {name:productDiamond,price:pricetDiamond},
     ]
     setCartProductAll(objectProduct)
     setTotalPrice(sum.toFixed(2))
-  },[checkedandValue,priceColor,priceFace,priceMaterial,priceHand,priceNumber])
+  },[checkedandValue,priceColor,priceFace,priceMaterial,priceHand,priceNumber,priceDiamond])
   
   return (
     <DataContext.Provider value={{tt:totalPrice,oc:handleRadioChange}}>
@@ -173,6 +194,7 @@ function App() {
               <Route path='/product/custom' element={<> <Product Card={Card} allProduct={allProduct} image={img} setimg={setImg}/> </>}/>
               <Route path='/product/confirm' element={<><Cart cart={cartProductAll}  total={totalPrice}/></>}/>
               <Route path='/joint' element={<><Joint Card={Jointshop} genaral={genaralJoint} festival={festivalJoint} country={countryJoint}/></>}/>
+              <Route path='/community' element={<> <Community/> </>}/>
               <Route path='/contact' element={<><Contact/>  </>}/>
           </Routes>
         

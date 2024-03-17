@@ -32,7 +32,7 @@ export default function Cart ({cart, total}) {
                         </div>
                     </div>
                     <div className="flex md:justify-end md:mr-28 mt-8">
-                        <button className="bg-rose-500 py-2 px-24 rounded-xl text-white font">ยืนยัน</button>
+                        <button className="bg-rose-500 py-2  hover:bg-rose-300 px-24 rounded-xl text-white font">ยืนยัน</button>
                     </div>
                     </div>
                 </div>

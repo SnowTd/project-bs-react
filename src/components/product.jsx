@@ -9,8 +9,8 @@ export default function Product ({Card , image , allProduct,setimg}) {
     <div className=" font-Kanit">
         <p className="text-6xl flex justify-center mt-3"><span className="font-zemit mr-12 flex items-center">ZEMIT MORE AND MORE</span></p>
         <div className="">
-            <div className="ml-12 md:sticky w-64 md:left-1/4 md:top-1/2 mt-4 mb-4 z-[-1]">
-                <img id:original className="rounded-xl w-72 w-auto border z-[-1]" src={image} alt="" />
+            <div className="ml-12 md:sticky w-96 md:left-1/4 md:top-1/3 mt-4 mb-4 z-[-1] hover:scale-125">
+                <img id:original className="rounded-xl w-96 w-auto border z-[-1] " src={image} alt="" />
                 
             </div>
             <div className=" md:mr-72 flex justify-end ">
