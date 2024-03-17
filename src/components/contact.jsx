@@ -7,7 +7,7 @@ export default function Contact () {
                         CONTACT
                     </p>
                 </div>
-                <div className="flex container  justify-center text-4xl font-bold text-gray-500">
+                <div className="flex  justify-center text-4xl font-bold text-gray-500">
                     <p>
                         <ul className=" text-center ">
                             <a href="https://www.facebook.com/people/Zemit/61556957805772/"><li>FACEBOOK</li></a>

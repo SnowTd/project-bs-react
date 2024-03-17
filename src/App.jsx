@@ -23,7 +23,7 @@ function App() {
 
   
   const colorProduct = [
-    {id:0,header:'CUSTOM COLOR',title: 'Product1',content: 'Content',price:19.99,detail: 'detail',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg',},
+    {id:0,header:'CUSTOM COLOR',title: 'Product1',content: 'Content',price:19.99,detail: 'detail',img:'https://media.discordapp.net/attachments/1152548462727020626/1218569034321367060/S__2277433_0.png?ex=660823d9&is=65f5aed9&hm=fedcb3858fcbb09ca635e35b6e51cfde05d64dd3e3dd718ae62219c58951677d&=&format=webp&quality=lossless&width=359&height=508',},
     {id:1,header:'CUSTOM COLOR',title: 'Product2',content: 'Content',price:10.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
     {id:2,header:'CUSTOM COLOR',title: 'Product3',content: 'Content',price:12.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
   ]
@@ -47,7 +47,6 @@ function App() {
     {id:1,header:'CUSTOM NUMBER',title: 'Product',content: 'Content',price:10.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
     {id:2,header:'CUSTOM NUMBER',title: 'Product',content: 'Content',price:12.99,detail: 'detail ',img:'https://st2.depositphotos.com/1011969/6070/i/450/depositphotos_60704945-stock-photo-number-1.jpg'},
   ]
-
 
   const allProduct = [{name:colorProduct,header:colorProduct[0].header},{name:clockFaceProduct,header:clockFaceProduct[0].header},{name:materialProduct,header:materialProduct[0].header},{name:clockHandProduct,header:clockHandProduct[0].header},{name:NumberProduct,header:NumberProduct[0].header}]
   const [totalPrice,setTotalPrice] = useState(0) 
@@ -73,9 +72,20 @@ function App() {
   const [cartProductP,setCartProductP] = useState([])
   const [cartProductAll,setCartProductAll] = useState([])
 
+  const genaralJoint = [
+    {id:0,name:'joint',price:111,img:"https://img5.pic.in.th/file/secure-sv1/IMG_0626.png"},
+    {id:0,name:'joint',price:111,img:"https://img5.pic.in.th/file/secure-sv1/IMG_0626.png"},
+    {id:0,name:'joint',price:111,img:"https://img5.pic.in.th/file/secure-sv1/IMG_0626.png"},
+    {id:0,name:'joint',price:111,img:"https://img5.pic.in.th/file/secure-sv1/IMG_0626.png"},
+    {id:0,name:'joint',price:111,img:"https://img5.pic.in.th/file/secure-sv1/IMG_0626.png"},
+  ]
 
   const handleRadioChange = (e) => {
-    setImg(e.img)
+    const imgChange = e.target.img
+    console.log(imgChange)
+    setImg(e.target.alt)
+    console.log(e.target.alt)
+
     if (e.target.name === colorProduct[0].header) {
       setProductColor(e.target.title)
       setPricetColor(e.target.value)
@@ -131,9 +141,9 @@ function App() {
           <ScrollToTop/>
           <Routes>
               <Route path='/' element={<><Hcontent/><Content/><Collection/><AboutUs/></>}/> 
-              <Route path='/product' element={<> <Product Card={Card} allProduct={allProduct} image={img}/> </>}/>
+              <Route path='/product' element={<> <Product Card={Card} allProduct={allProduct} image={img} setimg={setImg}/> </>}/>
               <Route path='/product/confirm' element={<><Cart cart={cartProductAll} /></>}/>
-              <Route path='/joint' element={<><Joint Card={Jointshop}/></>}/>
+              <Route path='/joint' element={<><Joint Card={Jointshop} genaral={genaralJoint}/></>}/>
               <Route path='/contact' element={<><Contact/>  </>}/>
           </Routes>
         

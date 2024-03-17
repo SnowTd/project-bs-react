@@ -10,7 +10,7 @@ export default function AboutUs () {
                     <p>Time moves forward all the time and can never go back. Every moment of traveling is valuable and memorable,no one can go back in time for relive those good memories again But we will also be your agent in keep good memories of every moment in Zemit</p>
             </div>
 
-            <div className="bg-rose-300 w-screen h-12">
+            <div className="bg-rose-300 w-auto h-12">
 
             </div>
             
