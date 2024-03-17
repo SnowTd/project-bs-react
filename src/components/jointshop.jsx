@@ -6,7 +6,7 @@ export default function Joint ({Card, genaral , festival , country}) {
                 <p className="font-bold text-2xl">GENERAL JOINT</p>
             </div>
             <div className="container mx-auto px-24">
-                            <div className="grid grid-cols-4 gap-4">
+                            <div className="grid md:grid-cols-4 md:gap-4 gap-8">
             {genaral.map((e) => {
                 return (
                     <>
@@ -20,7 +20,7 @@ export default function Joint ({Card, genaral , festival , country}) {
                 <p className="font-bold text-2xl">LANDMARKS JOINT</p>
             </div>
             <div className="container mx-auto px-24">
-                            <div className="grid grid-cols-4 gap-4">
+                            <div className="grid md:grid-cols-4 md:gap-4 gap-8">
             {country.map((e) => {
                 return (
                     <>
@@ -34,7 +34,7 @@ export default function Joint ({Card, genaral , festival , country}) {
                 <p className="font-bold text-2xl">FESTIVAL JOINT</p>
             </div>
             <div className="container mx-auto px-24">
-                            <div className="grid grid-cols-4 gap-4">
+                            <div className="grid md:grid-cols-4 md:gap-4 gap-8">
             {festival.map((e) => {
                 return (
                     <>

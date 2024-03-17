@@ -13,7 +13,7 @@ export default function Product ({Card , image , allProduct,setimg}) {
                 <img id:original className="rounded-xl w-72 w-auto border z-[-1]" src={image} alt="" />
                 
             </div>
-            <div className=" mr-72 flex justify-end ">
+            <div className=" md:mr-72 flex justify-end ">
                 <div className="font-bold font-2xl">
                         {allProduct.map((prod)=> {
                             return (

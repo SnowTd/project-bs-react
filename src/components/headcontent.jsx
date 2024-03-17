@@ -13,13 +13,13 @@ export default function Hcontent () {
 
     return (
         <div className="">
-            <div className="flex md:justify-center justify-center">
+            <div className="flex md:justify-center justify-center w-auto md:py-20">
                 <img className="flex mt-24 hover:translate-y-2 transition duration-500" src="https://media.discordapp.net/attachments/1152548462727020626/1217569497293258902/Asset_3logoall.png?ex=660480f5&is=65f20bf5&hm=e6663d287521eb7f820062799a2843897bfcff9db7c7415ed91ef96fe386f556&=&format=webp&quality=lossless" alt="" />
             </div>
             <div className="flex justify-center mt-12">
-                <div className="text-cyan-950 text-4xl font-bold text-center font-Kanit uppercase flex justify-around">
+                <div className="text-cyan-950 md:text-4xl text-xl font-bold text-center font-Kanit uppercase flex justify-around">
                     <TypeAnimation
-                    className="pr-24"
+                    className="md:pr-24"
                     sequence={[
                     'Manage your Time',
                     1500,
@@ -29,7 +29,7 @@ export default function Hcontent () {
                     cursor={false}
                     repeat={false}/>
                     <TypeAnimation
-                    className="pr-24"
+                    className="md:pr-24"
                     sequence={[
                     1500,'Manage your life ',1500
                     ]}
