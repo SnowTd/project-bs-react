@@ -17,6 +17,8 @@ import Foot from './components/footer'
 import Collection from './components/Collection'
 import AboutUs from './components/aboutus'
 import Contact from './components/contact'
+import ProductShop from './components/productshop'
+import CardProduct from './components/cardforproductshop'
 
 function App() {
 
@@ -73,11 +75,37 @@ function App() {
   const [cartProductAll,setCartProductAll] = useState([])
 
   const genaralJoint = [
-    {id:0,name:'joint',price:111,img:"https://img5.pic.in.th/file/secure-sv1/IMG_0626.png"},
-    {id:0,name:'joint',price:111,img:"https://img5.pic.in.th/file/secure-sv1/IMG_0626.png"},
-    {id:0,name:'joint',price:111,img:"https://img5.pic.in.th/file/secure-sv1/IMG_0626.png"},
-    {id:0,name:'joint',price:111,img:"https://img5.pic.in.th/file/secure-sv1/IMG_0626.png"},
-    {id:0,name:'joint',price:111,img:"https://img5.pic.in.th/file/secure-sv1/IMG_0626.png"},
+    {id:0,name:'Power of Prayer',price:"2,390",img:"https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_Ppp__4.jpeg"},
+    {id:0,name:'Any Engraving Here',price:"2,390",img:"https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_Ppp__5.jpeg"},
+    {id:0,name:'Any words',price:"2,390",img:"https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_Ppp__9.jpeg"},
+    {id:0,name:'Audio Tape',price:"2,500",img:"https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_Ppp__17.jpeg"},
+    {id:0,name:'Let\'s to travel',price:"2,550",img:"https://img2.pic.in.th/pic/LINE_ALBUM_Ppp__13.jpeg"},
+    {id:0,name:'My High Heel',price:"2,490",img:"https://img2.pic.in.th/pic/LINE_ALBUM_Ppp__1.jpeg"},
+  ]
+  const festivalJoint = [
+    {id:0,name:'Hands Holi',price:"3,390",img:"https://img2.pic.in.th/pic/62038B25-DA3B-4172-9BD8-9CF332151127bc84495597874f1b.png"},
+    {id:0,name:'Holi India 2024',price:"3,350",img:"https://img2.pic.in.th/pic/43FCE164-EF0B-468A-BE93-43E8038817FA.png"},
+    {id:0,name:'Edinburgh mask ',price:"3,290",img:"https://img5.pic.in.th/file/secure-sv1/F06F9F7D-78C7-4E5C-AD97-F7AF849DFE31.png"},
+    {id:0,name:'Scotland Palace',price:"3,490",img:"https://img5.pic.in.th/file/secure-sv1/D0D5AA52-9567-4D92-A960-F13C457286333ab8017b095e677e.png"},
+    {id:0,name:'Gion Festival 2024',price:"3,450",img:"https://img5.pic.in.th/file/secure-sv1/0E166CA6-BF6C-4F4C-A084-135D027D262A.png"},
+    {id:0,name:'Gion Matsuri ',price:"3,490",img:"https://img5.pic.in.th/file/secure-sv1/25A09D7E-357B-434E-A855-FF804ED2F0C8.png"},
+    {id:0,name:'Mardi gras 2024',price:"3,390",img:"https://img2.pic.in.th/pic/C737B9EE-AB5C-44A9-8776-02A293B63FCB.png"},
+    {id:0,name:'Mardi gras hat',price:"3,350",img:"https://img5.pic.in.th/file/secure-sv1/2EDE80B0-FB00-4BA2-8E72-748194A34AF4.png"},
+    {id:0,name:'Power of Dragon',price:"3,500",img:"https://img2.pic.in.th/pic/7D135503-0AB6-44C0-9660-8369AFA6F940.png"},
+    {id:0,name:'Guitar of Dead',price:"3,290",img:"https://img5.pic.in.th/file/secure-sv1/85944849-0488-43A2-A7D4-0042A4B9B09F498845df780ccb01.png"},
+    {id:0,name:'Peace',price:"3,450",img:"https://img5.pic.in.th/file/secure-sv1/74DB7BED-82F8-4982-BD0D-687F32A60B9Ce8642cea4adae6b1.png"},
+  ]
+
+  const countryJoint = [
+    {id:0,name:'Once at St. Basils Cathedral ',price:"2,390",img:"https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_Ppp__4.jpeg"},
+    {id:0,name:'Colosseum of  Roma',price:"2,800",img:"https://img2.pic.in.th/pic/LINE_ALBUM_Ppp__3.jpeg"},
+    {id:0,name:'Pisa Piazza',price:"2,800",img:"https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_Ppp__2.jpeg"},
+    {id:0,name:'State of Newyork',price:"2,900",img:"https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_Ppp__11.jpeg"},
+    {id:0,name:'Eiffel de Paris',price:"2,850",img:"https://img2.pic.in.th/pic/LINE_ALBUM_Ppp__10.jpeg"},
+    {id:0,name:'Powering of Meple',price:"2,950",img:"https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_Ppp__12.jpeg"},
+    {id:0,name:'Red Bus',price:"2,900",img:"https://img2.pic.in.th/pic/LINE_ALBUM_Ppp__16.jpeg"},
+    {id:0,name:'Tuk Tuk Thailand',price:"2,850",img:"https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_Ppp__8.jpeg"},
+    {id:0,name:'Daimond Tuk Tuk',price:"2,890",img:"https://img5.pic.in.th/file/secure-sv1/LINE_ALBUM_Ppp__14.jpeg"},
   ]
 
   const handleRadioChange = (e) => {
@@ -141,9 +169,10 @@ function App() {
           <ScrollToTop/>
           <Routes>
               <Route path='/' element={<><Hcontent/><Content/><Collection/><AboutUs/></>}/> 
-              <Route path='/product' element={<> <Product Card={Card} allProduct={allProduct} image={img} setimg={setImg}/> </>}/>
-              <Route path='/product/confirm' element={<><Cart cart={cartProductAll} /></>}/>
-              <Route path='/joint' element={<><Joint Card={Jointshop} genaral={genaralJoint}/></>}/>
+              <Route path='/product' element={<><ProductShop Card={CardProduct}/></>}/>
+              <Route path='/product/custom' element={<> <Product Card={Card} allProduct={allProduct} image={img} setimg={setImg}/> </>}/>
+              <Route path='/product/confirm' element={<><Cart cart={cartProductAll}  total={totalPrice}/></>}/>
+              <Route path='/joint' element={<><Joint Card={Jointshop} genaral={genaralJoint} festival={festivalJoint} country={countryJoint}/></>}/>
               <Route path='/contact' element={<><Contact/>  </>}/>
           </Routes>
         

@@ -1,11 +1,11 @@
-export default function Joint ({Card, genaral}) {
+export default function Joint ({Card, genaral , festival , country}) {
     
     return (
         <>
-            <div className="container m-24"> 
+            <div className=" m-24"> 
                 <p className="font-bold text-2xl">GENERAL JOINT</p>
             </div>
-            <div className="container mx-auto">
+            <div className="container mx-auto px-24">
                             <div className="grid grid-cols-4 gap-4">
             {genaral.map((e) => {
                 return (
@@ -15,13 +15,13 @@ export default function Joint ({Card, genaral}) {
                 )
             })}
             </div>
-                        </div>
-                        <div className="container m-24"> 
-                <p className="font-bold text-2xl">COUNTRY JOINT</p>
             </div>
-            <div className="container mx-auto">
+            <div className=" m-24"> 
+                <p className="font-bold text-2xl">LANDMARKS JOINT</p>
+            </div>
+            <div className="container mx-auto px-24">
                             <div className="grid grid-cols-4 gap-4">
-            {genaral.map((e) => {
+            {country.map((e) => {
                 return (
                     <>
                         <Card {...e}/>
@@ -29,13 +29,13 @@ export default function Joint ({Card, genaral}) {
                 )
             })}
             </div>
-                        </div>
-                        <div className="container m-24"> 
+            </div>
+            <div className=" m-24"> 
                 <p className="font-bold text-2xl">FESTIVAL JOINT</p>
             </div>
-            <div className="container mx-auto">
+            <div className="container mx-auto px-24">
                             <div className="grid grid-cols-4 gap-4">
-            {genaral.map((e) => {
+            {festival.map((e) => {
                 return (
                     <>
                         <Card {...e}/>
@@ -43,8 +43,7 @@ export default function Joint ({Card, genaral}) {
                 )
             })}
             </div>
-                        </div>
-            
+            </div>
         </>
 
     )
