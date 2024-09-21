@@ -1,3 +1,10 @@
+# โปรเจค ตย. present ปี 1 วิชา bs-ar
+
+จุดประสงค์คือพัฒนา skill การเขียนเว็บไซต์ที่ได้รับมอบหมายจากเพื่อน และนี้คือโปรเจคแรกที่เขียนหลังจากเรียนรู้ด้วยตัวเอง
+*เป็น front-end ล้วนไม่มีความรู้เรื่อง back-end และเก็บข้อมูลบนเว็บไซต์
+
+
+# เครื่องมือ
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
