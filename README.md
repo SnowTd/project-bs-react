@@ -4,6 +4,10 @@
 *เป็น front-end ล้วนไม่มีความรู้เรื่อง back-end และเก็บข้อมูลบนเว็บไซต์
 
 
+deploy บน netlify 
+https://zemit.netlify.app/
+
+
 # เครื่องมือ
 # React + Vite
 
