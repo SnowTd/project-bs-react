@@ -38,21 +38,21 @@ export default function Nav() {
             <div className="sticky">
                 <div className=" font-Kanit">
                     <div className="flex justify-center py-1 bg-rose-300">
-                        <img className="w-8" src="https://media.discordapp.net/attachments/1152548462727020626/1217569497293258902/Asset_3logoall.png?ex=660480f5&is=65f20bf5&hm=e6663d287521eb7f820062799a2843897bfcff9db7c7415ed91ef96fe386f556&=&format=webp&quality=lossless" alt="" />
+                        <img className="w-8" src="/logo.png" alt="" />
                     </div>
 
                     <div className={sticky ? "fixed w-[100%] bg-white top-0 z-auto" : "bg-white"}>
                         <div className="p-4 px-20 shadow md:flex md:items-center justify-between ">
                             
                             <Link to='/'><div className=" font-bold text-black  hidden md:flex flex-1 w-1/2 ">
-                            <img src="https://media.discordapp.net/attachments/1152548462727020626/1217559034308198440/Asset_2logosym.png?ex=66047736&is=65f20236&hm=a1b898194505bb0b7ec6a9de15faa175a7202be7c42957c2dad677f66f364630&=&format=webp&quality=lossless" alt="" className="w-6 h-6" />
+                            <img src="/logofull.png" alt="" className="w-6 h-6" />
                             <p className="pl-1">ZEMIT</p>
                                 
                             </div></Link>
                             <Link to="/">
                                 <div className="flex justify-between md:hidden">
                                     <div className=" md:px-10 ">
-                                        <img src="https://media.discordapp.net/attachments/1152548462727020626/1217559034308198440/Asset_2logosym.png?ex=66047736&is=65f20236&hm=a1b898194505bb0b7ec6a9de15faa175a7202be7c42957c2dad677f66f364630&=&format=webp&quality=lossless" alt="" className="w-8 h-8" />
+                                        <img src="/logofull.png" alt="" className="w-8 h-8" />
                                     </div>
                                     <span className="text-3xl cursor-pointer md:hidden block">
                                         <ion-icon name="menu" onClick={() => Menu("menu")}></ion-icon>
