@@ -8,7 +8,7 @@ export default function Foot () {
                 <div class="md:flex md:justify-between">
                 <div class="mb-6 md:mb-0">
                     <a href="/" class="flex items-center">
-                        <img src="https://media.discordapp.net/attachments/1152548462727020626/1217569497293258902/Asset_3logoall.png?ex=660480f5&is=65f20bf5&hm=e6663d287521eb7f820062799a2843897bfcff9db7c7415ed91ef96fe386f556&=&format=webp&quality=lossless" class="h-8 me-3" alt="LOGO" />
+                        <img src="/logo.png" class="h-8 me-3" alt="LOGO" />
                         <span class="self-center text-2xl whitespace-nowrap font-zemit font-bold">ZEMIT</span>
                     </a>
                 </div>
@@ -69,7 +69,7 @@ export default function Foot () {
             </div>
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div class="sm:flex sm:items-center sm:justify-between">
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" class="hover:underline">Papafamily</a>. All Rights Reserved.
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="#" class="hover:underline">Papafamily</a>. All Rights Reserved.
                 </span>
             </div>
             </div>
